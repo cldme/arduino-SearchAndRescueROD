@@ -30,19 +30,19 @@ void loop() {
     // press 'k' to progressively open and 'l' to progressively close 
     switch(key) {
       case 'o':
-        digitalWrite(motorEN, HIGH);
+        digitalWrite(motorEN, LOW);
         digitalWrite(motorPlus, HIGH);
         digitalWrite(motorMinus, LOW);
         Serial.println("Open");
-        delay(2000);
+        delay(1000);
         stopMotors();
       break;
       case 'p':
-        digitalWrite(motorEN, HIGH);
+        digitalWrite(motorEN, LOW);
         digitalWrite(motorPlus, LOW);
         digitalWrite(motorMinus, HIGH);
         Serial.println("Close");
-        delay(2000);
+        delay(1000);
         stopMotors();
       break;
       case 'k':
